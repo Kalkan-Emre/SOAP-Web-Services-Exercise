@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Inbox</title>
+    <script src="functions.js"></script>
+    <link rel="stylesheet" href="generalStyle.css">
+
+</head>
+<body onLoad="javascript:blockDirectAccess();javascript:logOutIfNotActive();">
+    <button onclick="document.location=document.referrer">Main Page</button>
+    <br>
+    <br>
+    <section>
+        <button onclick="getInbox();">Get Inbox</button>
+    </section>
+
+    <section>
+        <h2>---Inbox---</h2>
+        <pre id="myInbox"></pre>
+    </section>
+
+</body>
+</html>

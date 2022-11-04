@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="functions.js"></script>
+    <link rel="stylesheet" href="generalStyle.css">
+</head>
+<body onLoad="javascript:blockDirectAccess();javascript:logOutIfNotActive();">
+    <button onclick="document.location=document.referrer">Main Page</button>
+    <h2>Update Profile Page</h2>
+    <br>
+    <section>
+        <input type="text" id="newPassword">
+        <button onclick="updatePassword();">Update Password</button>
+    </section>
+</body>
+</html>

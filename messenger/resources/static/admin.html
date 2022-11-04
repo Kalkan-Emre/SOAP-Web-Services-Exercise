@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SOAP Web Service</title>
+    <script src="functions.js"></script>
+    <link rel="stylesheet" href="generalStyle.css">
+</head>
+<body onLoad="javascript:blockDirectAccess();javascript:logOutIfNotActive();" >
+    <button onclick="document.location=document.referrer">Main Page</button>
+    <br>
+    <br>
+    <section>
+        <input type="button" value="list users" onclick="getUserList();"/>
+    </section>
+    <section>
+        <h2>---User List---</h2>
+        <pre id="userList"></pre>
+    </section>
+    <br>
+    <br>
+    <section>
+        <h2>---Remove User---</h2>
+        <input type="text" id="username">
+        <button onclick="removeUser();">Remove User</button>
+    </section>
+    <br>
+    <br>
+    <section>
+        <h2>---Add User---</h2>
+        <form>
+            <label> Firstname </label>
+            <input type="text" name="firstname" id="firstname" size="15"/> <br> <br>
+            <label> Lastname: </label>
+            <input type="text" name="lastname" id="lastname" size="15"/> <br> <br>
+            <label> Username: </label>
+            <input type="text" name="username" id="newUsername" size="15"/> <br> <br>
+            Password:
+            <input type="Password" id="pass" name="pass"> <br><br>
+
+            <label for="birthday">Birthday:</label>
+            <input type="date" id="birthday" name="birthday">
+            <br> <br>
+
+            <label>
+                User type :
+            </label>
+            <select id="usertype">
+                <option value="regular">regular</option>
+                <option value="admin">admin</option>
+            </select>
+            <br>
+            <br>
+            <label>
+                Gender :
+            </label>
+            <select id="gender">
+                <option value="male">male</option>
+                <option value="female">female</option>
+            </select>
+            <br>
+            <br>
+            <label> Address: </label>
+            <input type="text" id="address" name="Address" /> <br> <br>
+            Email:
+            <input type="email" id="email" name="email"/>
+            <br> <br>
+            <input type="button" value="add user" onclick="addUser();"/>
+        </form>
+    </section>
+
+</body>
+</html>

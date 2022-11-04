@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SOAP Web Service</title>
+    <script src="functions.js"></script>
+    <link rel="stylesheet" href="generalStyle.css">
+
+</head>
+<body onLoad="javascript:blockDirectAccess();javascript:logOutIfNotActive();" >
+    <button onclick="document.location=document.referrer">Main Page</button>
+<section>
+    <p>---Send Message---</p>
+    <form>
+        <label> Send to: </label>
+        <input type="text" name="to" id="to" size="15"/> <br> <br>
+        <label> Message: </label>
+        <input type="text" name="message body" id="message" size="15"/> <br> <br>
+        <input type="button" value="send" onclick="sendMessage();"/>
+    </form>
+</section>
+</body>
+</html>

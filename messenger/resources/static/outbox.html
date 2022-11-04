@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Outbox</title>
+    <script src="functions.js"></script>
+    <link rel="stylesheet" href="generalStyle.css">
+</head>
+<body onLoad="javascript:blockDirectAccess();javascript:logOutIfNotActive();">
+    <button onclick="document.location=document.referrer">Main Page</button>
+    <br>
+    <br>
+    <section>
+        <button onclick="getOutbox();">Get Outbox</button>
+    </section>
+
+    <section>
+        <h2>---Outbox---</h2>
+        <pre id="myOutbox"></pre>
+    </section>
+
+</body>
+</html>
